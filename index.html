@@ -28,6 +28,24 @@
         .top-banner span {
             font-size: 1.5em;
         }
+	.profile-photo {
+    	display: flex;
+	top: 100px
+	left: 50%;
+    	justify-content: center;
+    	
+    	margin-top: 80px; /* Чтобы изображение не перекрывалось баннером */
+	}
+
+	.profile-photo img {
+    	width: 150px;
+    	height: 150px;
+    	border-radius: 50%;
+    	border: 5px solid white;
+    	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	object-fit: cover;
+	position: fixed
+	}
         .content {
             max-width: 900px;
             margin: 100px auto 20px auto; /* Добавлен верхний отступ для контента */
@@ -245,13 +263,15 @@
     <div class="top-banner">
         <span>Արթուր Հարությունյան</span>
     </div>
-    
+    <div class="profile-photo">
+    <img src="profile.jpg" alt="Profile Photo">
+</div>
     <div class="content">
         <div class="photo-gallery">
             <img src="photo1.jpg" alt="Photo 1" onclick="openModal(this.src)">
             <img src="photo2.jpg" alt="Photo 2" onclick="openModal(this.src)">
             <img src="photo3.jpg" alt="Photo 3" onclick="openModal(this.src)">
-            
+            <img src="photo4.jpg" alt="Photo 4" onclick="openModal(this.src)">
         </div>
         <div class="contact-info">
             <h2>Կոնտակտներ</h2>
